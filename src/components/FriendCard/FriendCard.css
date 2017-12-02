@@ -1,0 +1,71 @@
+.card {
+  background: #fff;
+  border-radius: 2px;
+  height: 225px;
+  margin: 1rem;
+  position: relative;
+  width: 325px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+}
+
+.card > .img-container {
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background:#6CADDC;
+}
+.card > .img-container > img {
+  width: 60%
+}
+
+.card-btn {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border: none;
+  top: 10px;
+  right: 15px;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: FontAwesome;
+  outline: none;
+}
+
+.pass {
+  left: 1%;
+  background: yellow;
+}
+
+.pass::after {
+  content: "\f087";
+}
+
+.pick {
+  right: 1%;
+  background: yellow;
+}
+
+.pick::after {
+  content: "\f087";
+}
+
+.pick:hover::after, .pass:hover::after {
+  animation: iconBounce .57s 1;
+}
+
+@keyframes iconBounce {
+  0% {
+    font-size: 24px;
+  }
+  
+   50% {
+    font-size: 28px;
+  }
+  
+  100% {
+    font-size: 24px;
+  }
+
+}

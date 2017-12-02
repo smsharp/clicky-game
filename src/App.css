@@ -1,0 +1,30 @@
+h3 {
+	float: right;
+	margin-top: -40px;
+	padding-right: 30px;
+}
+
+#messageText {
+	float: none;
+	text-align: center;
+}
+
+.panel {
+    border: 0;
+}
+
+.panel-heading {
+	padding-left: 45px;
+	box-shadow: 0 4px 28px rgba(0,0,0,.25), 0 5px 10px rgba(0,0,0,.22);
+}
+
+#cardDiv {
+	padding-top: 50px;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 20px;
+	justify-content: space-around;
+	align-content: flex-start;
+	overflow: auto;
+}
